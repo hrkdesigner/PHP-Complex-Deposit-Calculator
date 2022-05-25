@@ -1,0 +1,119 @@
+<html>
+
+<head>
+   <title>Deposit Calculator</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+      body {
+         padding: 20px auto;
+         margin: 0;
+         box-sizing: border-box;
+         background-color: #fff;
+         cursor: default;
+         font-weight: 400;
+      }
+
+      h3 {
+         text-align: center;
+         padding-bottom: 20px;
+         
+      }
+   </style>
+</head>
+
+<body class="container">
+   <h3>Deposite Calculator</h3>
+   <form method="post" action="DepositCalculator.php" class="col-md-offset-2">
+      <div class="form-group row">
+         <label for="amount" class="control-label col-md-3">Principal Amount</label>
+         <div class="col-sm-6">
+            <input type="text" name="amount" id="amount" class="form-control">
+         </div>
+      </div>
+      <div class="form-group row">
+         <label for="rate" class="control-label col-md-3">Interest Rate (%)</label>
+         <div class="col-sm-6">
+            <input type="text" name="rate" id="rate" class="form-control">
+         </div>
+      </div>
+      <div class="form-group row">
+         <label for="deposit" class="control-label col-md-3">Month of deposit</label>
+         <div class="col-sm-6">
+            <select name="deposit" class="form-control">
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+               <option value="11">11</option>
+               <option value="12">12</option>
+               <option value="13">13</option>
+               <option value="14">14</option>
+               <option value="15">15</option>
+               <option value="16">16</option>
+               <option value="17">17</option>
+               <option value="18">18</option>
+               <option value="19">19</option>
+               <option value="20">20</option>
+            </select>
+         </div>
+      </div>
+      <hr />
+      <div class="form-group row">
+         <label for="name" class="control-label col-md-3">Name</label>
+         <div class="col-sm-6">
+            <input type="text" name="name" id="name" class="form-control">
+         </div>
+      </div>
+      <div class="form-group row">
+         <label for="code" class="control-label col-md-3">Postal Code</label>
+         <div class="col-sm-6">
+            <input type="text" name="code" id="code" class="form-control">
+         </div>
+      </div>
+      <div class="form-group row">
+         <label for="number" class="control-label col-md-3">Phone Number</label>
+         <div class="col-sm-6">
+            <input type="text" name="number" id="number" class="form-control">
+         </div>
+      </div>
+      <div class="form-group row">
+         <label for="mail" class="control-label col-md-3">Email Address</label>
+         <div class="col-sm-6">
+            <input type="email" name="mail" id="mail" class="form-control">
+         </div>
+      </div>
+      <div class="form-group row">
+         <p class="col-md-3"><strong>Prefereed Contact Method: </strong> </p>
+         <div class="col-md-6">
+            <label class="radio-inline"> <input type="radio" name="contact" value="phone" />Phone</label>
+            <label class="radio-inline"><input type="radio" name="contact" value="email" />Email</label>
+         </div>
+      </div>
+      <hr />
+      <div class="form-group row">
+         <p><strong>If Phone is selected when we can contaact you (use all the possible)? </strong></p>
+         <label class="checkbox-inline"> <input type="checkbox" class="checkbox-inline" name="time[0]"
+               value="morning" />Morning</label>
+         <label class="checkbox-inline"><input type="checkbox" class="checkbox-inline" name="time[1]"
+               value="afternoon" />Afternoon</label>
+         <label class="checkbox-inline"><input type="checkbox" class="checkbox-inline" name="time[2]"
+               value="evening" />Evening</label>
+      </div>
+      <div class="form-group row">
+         <input type="submit" value="Calculate" name="submit" class="btn btn-primary" />
+         <input type="button" value="Clear" class="btn btn-primary" />
+      </div>
+   </form>
+</body>
+
+</html>
